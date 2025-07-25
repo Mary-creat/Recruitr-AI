@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "lint": "eslint ./src",
+   "lint": "eslint . --ext .js",
     "test": "mocha test.js",
     "watch": "mocha --watch test.js",
     "coverage": "istanbul cover ./node_modules/.bin/_mocha -- test.js",
