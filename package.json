@@ -1,5 +1,9 @@
 {
   "dependencies": {
     "say": "^0.16.0"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "mocha": "^11.7.1"
   }
 }
