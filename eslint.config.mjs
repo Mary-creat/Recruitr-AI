@@ -1,5 +1,7 @@
-import { defineConfig } from "eslint/config";
+export default defineConfig({
+  files: ["src/**/*.js"], // Or adjust path as needed
+  rules: {
+    // Your ESLint rules here
+  },
+});
 
-export default defineConfig([
-  { ignores: ["**/*.js", "**/*.cjs", "**/*.mjs"] },
-]);
