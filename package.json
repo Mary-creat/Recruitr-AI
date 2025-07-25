@@ -1,9 +1,24 @@
 {
-  "dependencies": {
-    "say": "^0.16.0"
+  "name": "recruitr-ai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint ./src",
+    "test": "mocha test.js",
+    "watch": "mocha --watch test.js",
+    "coverage": "istanbul cover ./node_modules/.bin/_mocha -- test.js",
+    "test-travis": "istanbul cover node_modules/.bin/_mocha --report lcovonly -- test.js"
   },
   "devDependencies": {
+    "eslint": "^9.31.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
     "istanbul": "^0.4.5",
     "mocha": "^11.7.1"
+  },
+  "dependencies": {
+    "say": "^0.16.0"
   }
 }
